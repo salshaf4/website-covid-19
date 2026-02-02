@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCovid - Informasi Penting Covid-19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <div class="logo-text">Info<span>Covid</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="pencegahan.html"><i class="fas fa-shield-alt"></i> Pencegahan</a></li>
+                    <li><a href="gejala.html"><i class="fas fa-stethoscope"></i> Gejala</a></li>
+                    <li><a href="vaksinasi.html"><i class="fas fa-syringe"></i> Vaksinasi</a></li>
+                    <li><a href="statistik.html"><i class="fas fa-chart-line"></i> Statistik</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">INFORMASI PENTING</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Lindungi Diri dan Keluarga dari</span>
+                    <span class="hero-title-line highlight">Covid-19</span>
+                </h1>
+                <p class="hero-subtitle">Dapatkan informasi akurat, langkah pencegahan, dan panduan lengkap untuk menghadapi pandemi dengan aman.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="hero-stat-content">
+                            <div class="hero-stat-number">230+ Juta</div>
+                            <div class="hero-stat-label">Populasi Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <div class="hero-stat-content">
+                            <div class="hero-stat-number">204 Juta</div>
+                            <div class="hero-stat-label">Vaksinasi Lengkap</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#penting" class="btn btn-primary btn-lg btn-animate">
+                        <span class="btn-text">Mulai Pelajari</span>
+                        <i class="fas fa-arrow-down btn-icon"></i>
+                    </a>
+                    <a href="tel:119" class="btn btn-secondary btn-lg btn-animate">
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="btn-text">Hotline 119</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <div class="scroll-text">Scroll untuk informasi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Informasi PENTING -->
+    <section class="important-info" id="penting">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">WAJIB TAHU</div>
+                <h2 class="section-title">Informasi <span class="highlight">Paling Penting</span></h2>
+                <p class="section-subtitle">Hal-hal mendasar yang harus diketahui oleh setiap warga Indonesia</p>
+            </div>
+            
+            <div class="important-grid">
+                <!-- Card 1 -->
+                <div class="important-card card-animate" data-delay="0">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div class="card-tag urgent">PENTING!</div>
+                    <h3 class="card-title">Pakai Masker dengan Benar</h3>
+                    <p class="card-text">Masker harus menutupi hidung dan mulut. Ganti masker setiap 4 jam atau jika basah. Masker melindungi Anda dan orang lain dari penyebaran virus.</p>
+                    <div class="card-footer">
+                        <a href="pencegahan.html" class="card-link">
+                            <span>Pelajari lebih lanjut</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-exclamation"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="important-card card-animate" data-delay="0.1">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-hands-wash"></i>
+                    </div>
+                    <div class="card-tag urgent">PENTING!</div>
+                    <h3 class="card-title">Cuci Tangan 20 Detik</h3>
+                    <p class="card-text">Cuci tangan dengan sabun dan air mengalir minimal 20 detik. Jika tidak ada air, gunakan hand sanitizer dengan kandungan alkohol minimal 60%.</p>
+                    <div class="card-footer">
+                        <a href="pencegahan.html" class="card-link">
+                            <span>Pelajari lebih lanjut</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-exclamation"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="important-card card-animate" data-delay="0.2">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-people-arrows"></i>
+                    </div>
+                    <div class="card-tag urgent">PENTING!</div>
+                    <h3 class="card-title">Jaga Jarak 1-2 Meter</h3>
+                    <p class="card-text">Hindari kerumunan dan jaga jarak minimal 1-2 meter dari orang lain. Virus menyebar melalui droplet saat batuk, bersin, atau berbicara.</p>
+                    <div class="card-footer">
+                        <a href="pencegahan.html" class="card-link">
+                            <span>Pelajari lebih lanjut</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-exclamation"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="important-card card-animate" data-delay="0.3">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <div class="card-tag vaksin">VAKSINASI</div>
+                    <h3 class="card-title">Vaksinasi Lengkap + Booster</h3>
+                    <p class="card-text">Vaksinasi mengurangi risiko sakit berat, rawat inap, dan kematian. Dapatkan vaksin dosis lengkap dan booster sesuai jadwal.</p>
+                    <div class="card-footer">
+                        <a href="vaksinasi.html" class="card-link">
+                            <span>Info vaksinasi</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="important-card card-animate" data-delay="0.4">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-head-side-cough"></i>
+                    </div>
+                    <div class="card-tag gejala">GEJALA</div>
+                    <h3 class="card-title">Kenali Gejala Awal</h3>
+                    <p class="card-text">Demam, batuk, sesak napas, kehilangan indra penciuman/perasa. Jika mengalami gejala, isolasi mandiri dan lakukan tes Covid-19.</p>
+                    <div class="card-footer">
+                        <a href="gejala.html" class="card-link">
+                            <span>Detail gejala</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-thermometer"></i>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="important-card card-animate" data-delay="0.5">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="card-tag isolasi">ISOLASI</div>
+                    <h3 class="card-title">Isolasi Mandiri Jika Sakit</h3>
+                    <p class="card-text">Jika gejala ringan, lakukan isolasi mandiri di rumah selama minimal 10 hari. Pisahkan diri dari anggota keluarga lain.</p>
+                    <div class="card-footer">
+                        <a href="pencegahan.html" class="card-link">
+                            <span>Panduan isolasi</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-corner">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Statistik -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">DATA TERKINI</div>
+                <h2 class="section-title">Statistik <span class="highlight">Covid-19 Indonesia</span></h2>
+                <p class="section-subtitle">Update terakhir: Juni 2023 | Sumber: Kementerian Kesehatan RI</p>
+            </div>
+            
+            <div class="stats-visual">
+                <div class="stats-chart">
+                    <div class="chart-container">
+                        <div class="chart-bar confirmed" style="height: 85%">
+                            <div class="chart-label">Kasus</div>
+                            <div class="chart-value">6.74 Juta</div>
+                        </div>
+                        <div class="chart-bar recovered" style="height: 82%">
+                            <div class="chart-label">Sembuh</div>
+                            <div class="chart-value">6.57 Juta</div>
+                        </div>
+                        <div class="chart-bar deaths" style="height: 15%">
+                            <div class="chart-label">Meninggal</div>
+                            <div class="chart-value">161 Ribu</div>
+                        </div>
+                        <div class="chart-bar vaccinated" style="height: 95%">
+                            <div class="chart-label">Vaksinasi</div>
+                            <div class="chart-value">204 Juta</div>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color confirmed"></span>
+                            <span class="legend-text">Kasus Terkonfirmasi</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color recovered"></span>
+                            <span class="legend-text">Pasien Sembuh</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color deaths"></span>
+                            <span class="legend-text">Kasus Meninggal</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color vaccinated"></span>
+                            <span class="legend-text">Vaksinasi Lengkap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Tren Positif</h3>
+                            <p>Kasus aktif Covid-19 di Indonesia menunjukkan tren penurunan yang konsisten sejak puncak pandemi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-vaccine"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Cakupan Vaksinasi Tinggi</h3>
+                            <p>Lebih dari 87% populasi Indonesia telah mendapatkan vaksinasi dosis lengkap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Kesiapan RS Meningkat</h3>
+                            <p>Ketersediaan tempat tidur di rumah sakit untuk pasien Covid-19 dalam kondisi aman.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-note">
+                <div class="note-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <p>Meskipun tren positif, kewaspadaan tetap diperlukan. Patuhi protokol kesehatan dan segera lakukan vaksinasi booster.</p>
+            </div>
+            
+            <div class="center">
+                <a href="statistik.html" class="btn btn-outline btn-animate">
+                    <span class="btn-text">Lihat Statistik Lengkap</span>
+                    <i class="fas fa-chart-bar btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Langkah Darurat -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">TINDAKAN DARURAT</div>
+                <h2 class="section-title">Langkah <span class="highlight">Jika Terpapar</span> Covid-19</h2>
+                <p class="section-subtitle">Apa yang harus dilakukan jika Anda atau keluarga terpapar Covid-19</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-left">
+                        <div class="timeline-step">Langkah 1</div>
+                        <h3 class="timeline-title">Lakukan Tes Covid-19</h3>
+                        <p class="timeline-text">Jika mengalami gejala atau kontak erat dengan pasien positif, segera lakukan tes PCR atau antigen di fasilitas kesehatan terdekat.</p>
+                        <div class="timeline-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Hasil tes antigen bisa diketahui dalam 15-30 menit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-right">
+                        <div class="timeline-step">Langkah 2</div>
+                        <h3 class="timeline-title">Isolasi Mandiri</h3>
+                        <p class="timeline-text">Jika hasil positif dengan gejala ringan, lakukan isolasi mandiri di rumah selama minimal 10 hari sejak gejala muncul.</p>
+                        <div class="timeline-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Siapkan ruangan terpisah dan perlengkapan pribadi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-left">
+                        <div class="timeline-step">Langkah 3</div>
+                        <h3 class="timeline-title">Monitor Gejala</h3>
+                        <p class="timeline-text">Pantau gejala dan suhu tubuh dua kali sehari. Siapkan termometer dan oksimeter untuk memantau saturasi oksigen.</p>
+                        <div class="timeline-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Saturasi oksigen normal: 95-100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-right">
+                        <div class="timeline-step">Langkah 4</div>
+                        <h3 class="timeline-title">Cari Bantuan Medis</h3>
+                        <p class="timeline-text">Jika gejala memburuk (sesak napas, demam tinggi tidak turun), segera hubungi hotline 119 atau fasilitas kesehatan.</p>
+                        <div class="timeline-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Jangan menunda mencari bantuan jika kondisi memburuk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warning-box animate-up">
+                <div class="warning-header">
+                    <div class="warning-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="warning-title">Segera ke Rumah Sakit Jika:</h3>
+                </div>
+                <div class="warning-content">
+                    <div class="warning-item">
+                        <i class="fas fa-lungs"></i>
+                        <span>Sesak napas atau kesulitan bernapas</span>
+                    </div>
+                    <div class="warning-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Nyeri dada yang terus-menerus</span>
+                    </div>
+                    <div class="warning-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Kebingungan atau sulit bangun</span>
+                    </div>
+                    <div class="warning-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Wajah atau bibir membiru</span>
+                    </div>
+                    <div class="warning-item">
+                        <i class="fas fa-thermometer-full"></i>
+                        <span>Demam tinggi (>39°C) yang tidak turun</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Hotline -->
+    <section class="hotline-section">
+        <div class="container">
+            <div class="hotline-content">
+                <div class="hotline-info animate-left">
+                    <div class="hotline-badge">BANTUAN CEPAT</div>
+                    <h2 class="hotline-title">Butuh Bantuan <span class="highlight">Mendesak?</span></h2>
+                    <p class="hotline-subtitle">Tim medis siap membantu 24 jam melalui nomor darurat berikut</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card emergency animate-up" data-delay="0">
+                            <div class="contact-glow"></div>
+                            <div class="contact-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Gawat Darurat</h3>
+                                <a href="tel:112" class="contact-number pulse-animation">112</a>
+                                <p class="contact-desc">24 jam - Gratis panggilan</p>
+                            </div>
+                            <div class="contact-action">
+                                <a href="tel:112" class="btn-call">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Telepon</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card covid-hotline animate-up" data-delay="0.1">
+                            <div class="contact-glow"></div>
+                            <div class="contact-icon">
+                                <i class="fas fa-virus"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Hotline Covid-19</h3>
+                                <a href="tel:119" class="contact-number pulse-animation">119</a>
+                                <p class="contact-desc">Ext. 9 untuk konsultasi Covid-19</p>
+                            </div>
+                            <div class="contact-action">
+                                <a href="tel:119" class="btn-call">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Telepon</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card telemedicine animate-up" data-delay="0.2">
+                            <div class="contact-glow"></div>
+                            <div class="contact-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Konsultasi Dokter</h3>
+                                <a href="tel:1500567" class="contact-number">1500 567</a>
+                                <p class="contact-desc">Kemenkes Telemedicine</p>
+                            </div>
+                            <div class="contact-action">
+                                <a href="tel:1500567" class="btn-call">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Telepon</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hotline-visual animate-right">
+                    <div class="visual-container">
+                        <div class="visual-circle">
+                            <div class="circle-inner">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="circle-pulse"></div>
+                            <div class="circle-pulse delay-1"></div>
+                            <div class="circle-pulse delay-2"></div>
+                        </div>
+                        <div class="visual-text">
+                            <h3>Hotline 24 Jam</h3>
+                            <p>Tim medis profesional siap membantu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon small">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="logo-text">Info<span>Covid</span></div>
+                        </div>
+                        <p class="footer-description">Platform informasi kesehatan Covid-19 terpercaya di Indonesia. Menyajikan data akurat, panduan lengkap, dan update terkini untuk melindungi masyarakat.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="social-tooltip">Facebook</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="social-tooltip">Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="social-tooltip">Instagram</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span class="social-tooltip">YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Navigasi</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link"><i class="fas fa-home"></i> Beranda</a></li>
+                            <li><a href="pencegahan.html" class="footer-link"><i class="fas fa-shield-alt"></i> Pencegahan</a></li>
+                            <li><a href="gejala.html" class="footer-link"><i class="fas fa-stethoscope"></i> Gejala</a></li>
+                            <li><a href="vaksinasi.html" class="footer-link"><i class="fas fa-syringe"></i> Vaksinasi</a></li>
+                            <li><a href="statistik.html" class="footer-link"><i class="fas fa-chart-line"></i> Statistik</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Kontak Darurat</h3>
+                        <ul class="footer-links">
+                            <li><a href="tel:119" class="footer-link emergency-link"><i class="fas fa-phone-alt"></i> Hotline Covid-19: <strong>119</strong></a></li>
+                            <li><a href="tel:112" class="footer-link emergency-link"><i class="fas fa-ambulance"></i> Darurat: <strong>112</strong></a></li>
+                            <li><a href="https://covid19.go.id" target="_blank" class="footer-link"><i class="fas fa-external-link-alt"></i> Website Resmi Covid-19</a></li>
+                            <li><a href="https://kemenkes.go.id" target="_blank" class="footer-link"><i class="fas fa-hospital"></i> Kemenkes RI</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Sumber Terpercaya</h3>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> WHO Indonesia</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> IDAI (Ikatan Dokter Anak)</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> PDPI (Paru Indonesia)</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> PB IDI (Dokter Umum)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2023</span> InfoCovid.id - Semua hak dilindungi.</p>
+                        <p class="disclaimer">Informasi di website ini hanya untuk tujuan edukasi. Konsultasikan dengan tenaga kesehatan untuk diagnosis dan pengobatan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
