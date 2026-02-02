@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCovid - Pencegahan Covid-19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for prevention page */
+        .page-header {
+            background: var(--red-gradient);
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .page-content {
+            padding: 80px 0;
+        }
+        
+        .protocol-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .protocol-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-red);
+        }
+        
+        .protocol-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .protocol-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--red-gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .protocol-card h3 {
+            font-size: 1.375rem;
+            margin-bottom: 15px;
+        }
+        
+        .protocol-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .protocol-card li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-medium);
+        }
+        
+        .protocol-card li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-red);
+            font-weight: bold;
+        }
+        
+        .priority {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+        
+        .priority.high {
+            background-color: var(--danger-light);
+            color: var(--danger);
+        }
+        
+        .priority.medium {
+            background-color: var(--warning-light);
+            color: var(--warning);
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-header h1 {
+                font-size: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <div class="logo-text">Info<span>Covid</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="pencegahan.html" class="active"><i class="fas fa-shield-alt"></i> Pencegahan</a></li>
+                    <li><a href="gejala.html"><i class="fas fa-stethoscope"></i> Gejala</a></li>
+                    <li><a href="vaksinasi.html"><i class="fas fa-syringe"></i> Vaksinasi</a></li>
+                    <li><a href="statistik.html"><i class="fas fa-chart-line"></i> Statistik</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Cara Mencegah <span class="highlight">Penyebaran Covid-19</span></h1>
+            <p>Lindungi diri, keluarga, dan masyarakat dengan langkah-langkah pencegahan yang efektif</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="section-header">
+                <h2>Protokol Kesehatan <span class="highlight">5M</span></h2>
+                <p>5 langkah dasar yang harus diterapkan oleh setiap orang</p>
+            </div>
+            
+            <div class="protocol-grid">
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3>Memakai Masker</h3>
+                    <ul>
+                        <li>Gunakan masker yang menutupi hidung dan mulut</li>
+                        <li>Masker medis (bedah) atau masker kain 3 lapis</li>
+                        <li>Ganti masker setiap 4 jam atau saat basah</li>
+                        <li>Cuci tangan sebelum dan sesudah memakai masker</li>
+                    </ul>
+                    <div class="priority high">Prioritas Tinggi</div>
+                </div>
+                
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-hands-wash"></i>
+                    </div>
+                    <h3>Mencuci Tangan</h3>
+                    <ul>
+                        <li>Cuci tangan dengan sabun dan air mengalir minimal 20 detik</li>
+                        <li>Gunakan hand sanitizer (minimal 60% alkohol) jika tidak ada air</li>
+                        <li>Cuci tangan setelah dari luar rumah, sebelum makan, setelah batuk/bersin</li>
+                        <li>Hindari menyentuh wajah dengan tangan yang belum dicuci</li>
+                    </ul>
+                    <div class="priority high">Prioritas Tinggi</div>
+                </div>
+                
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-people-arrows"></i>
+                    </div>
+                    <h3>Menjaga Jarak</h3>
+                    <ul>
+                        <li>Jaga jarak minimal 1-2 meter dari orang lain</li>
+                        <li>Hindari kerumunan dan tempat ramai</li>
+                        <li>Gunakan tanda fisik sebagai pengingat jarak</li>
+                        <li>Pilih tempat duduk atau antrean yang berjarak</li>
+                    </ul>
+                    <div class="priority high">Prioritas Tinggi</div>
+                </div>
+                
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3>Menjauhi Kerumunan</h3>
+                    <ul>
+                        <li>Batasi kunjungan ke tempat umum</li>
+                        <li>Hindari acara dengan banyak peserta</li>
+                        <li>Pilih waktu kunjungan saat sepi</li>
+                        <li>Manfaatkan layanan online jika memungkinkan</li>
+                    </ul>
+                    <div class="priority medium">Prioritas Sedang</div>
+                </div>
+                
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Membatasi Mobilitas</h3>
+                    <ul>
+                        <li>Kurangi perjalanan tidak penting</li>
+                        <li>Bekerja dari rumah jika memungkinkan</li>
+                        <li>Gunakan transportasi pribadi jika harus bepergian</li>
+                        <li>Patuhi pembatasan kegiatan yang berlaku</li>
+                    </ul>
+                    <div class="priority medium">Prioritas Sedang</div>
+                </div>
+            </div>
+            
+            <div class="center">
+                <a href="index.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Kembali ke Beranda</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon small">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="logo-text">Info<span>Covid</span></div>
+                        </div>
+                        <p class="footer-description">Platform informasi kesehatan Covid-19 terpercaya di Indonesia. Menyajikan data akurat, panduan lengkap, dan update terkini untuk melindungi masyarakat.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="social-tooltip">Facebook</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="social-tooltip">Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="social-tooltip">Instagram</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span class="social-tooltip">YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Navigasi</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link"><i class="fas fa-home"></i> Beranda</a></li>
+                            <li><a href="pencegahan.html" class="footer-link"><i class="fas fa-shield-alt"></i> Pencegahan</a></li>
+                            <li><a href="gejala.html" class="footer-link"><i class="fas fa-stethoscope"></i> Gejala</a></li>
+                            <li><a href="vaksinasi.html" class="footer-link"><i class="fas fa-syringe"></i> Vaksinasi</a></li>
+                            <li><a href="statistik.html" class="footer-link"><i class="fas fa-chart-line"></i> Statistik</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Kontak Darurat</h3>
+                        <ul class="footer-links">
+                            <li><a href="tel:119" class="footer-link emergency-link"><i class="fas fa-phone-alt"></i> Hotline Covid-19: <strong>119</strong></a></li>
+                            <li><a href="tel:112" class="footer-link emergency-link"><i class="fas fa-ambulance"></i> Darurat: <strong>112</strong></a></li>
+                            <li><a href="https://covid19.go.id" target="_blank" class="footer-link"><i class="fas fa-external-link-alt"></i> Website Resmi Covid-19</a></li>
+                            <li><a href="https://kemenkes.go.id" target="_blank" class="footer-link"><i class="fas fa-hospital"></i> Kemenkes RI</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Sumber Terpercaya</h3>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> WHO Indonesia</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> IDAI (Ikatan Dokter Anak)</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> PDPI (Paru Indonesia)</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-check-circle"></i> PB IDI (Dokter Umum)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2023</span> InfoCovid.id - Semua hak dilindungi.</p>
+                        <p class="disclaimer">Informasi di website ini hanya untuk tujuan edukasi. Konsultasikan dengan tenaga kesehatan untuk diagnosis dan pengobatan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
